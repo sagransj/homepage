@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal academic website for Dr. Alex Morgan"
+    />
+    <title>Dr. Alex Morgan | Scientist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Go to home">
+        <span class="brand-mark" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+        <span>Alex Morgan</span>
+      </a>
+
+      <button
+        class="menu-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Open navigation"
+      >
+        <span></span><span></span>
+      </button>
+
+      <nav id="primary-nav" class="tabs" aria-label="Main navigation">
+        <button class="tab active" type="button" data-tab="home">Home</button>
+        <button class="tab" type="button" data-tab="research">Research</button>
+        <button class="tab" type="button" data-tab="publications">Publications</button>
+        <button class="tab" type="button" data-tab="teaching">Teaching</button>
+        <button class="tab" type="button" data-tab="contact">Contact</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="panel active" id="home" data-panel="home">
+        <div class="home-copy">
+          <p class="eyebrow">Computational ecologist</p>
+          <h1>Alex Morgan,<br /><em>PhD.</em></h1>
+          <p class="intro">
+            I study how complex living systems respond to change, combining
+            field observation, data science, and ecological modeling.
+          </p>
+          <div class="home-actions">
+            <button class="primary-button" type="button" data-go="research">
+              Explore my research
+              <span aria-hidden="true">↗</span>
+            </button>
+            <button class="text-button" type="button" data-go="publications">
+              View publications
+            </button>
+          </div>
+          <dl class="quick-facts" aria-label="Professional details">
+            <div>
+              <dt>Based at</dt>
+              <dd>Northlake University</dd>
+            </div>
+            <div>
+              <dt>Focus</dt>
+              <dd>Climate &amp; ecosystems</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="portrait-wrap" aria-label="Portrait placeholder">
+          <div class="portrait">
+            <div class="sun"></div>
+            <div class="hills hills-back"></div>
+            <div class="hills hills-front"></div>
+            <div class="profile">
+              <div class="hair"></div>
+              <div class="face"></div>
+              <div class="neck"></div>
+              <div class="body"></div>
+            </div>
+          </div>
+          <p class="portrait-caption"><span>01</span> Field site, North Coast</p>
+        </div>
+      </section>
+
+      <section class="panel content-panel" id="research" data-panel="research">
+        <header class="section-heading">
+          <p class="eyebrow">Research</p>
+          <h2>Understanding change<br />in living systems.</h2>
+        </header>
+        <div class="research-grid">
+          <article class="research-card featured">
+            <span class="card-number">01</span>
+            <div>
+              <p class="card-kicker">Current project</p>
+              <h3>Ecological resilience under rapid change</h3>
+              <p>How do communities reorganize as environmental conditions shift?</p>
+            </div>
+          </article>
+          <article class="research-card">
+            <span class="card-number">02</span>
+            <div>
+              <p class="card-kicker">Data science</p>
+              <h3>Models for complex environments</h3>
+              <p>Developing interpretable models that bridge observations and prediction.</p>
+            </div>
+          </article>
+          <article class="research-card">
+            <span class="card-number">03</span>
+            <div>
+              <p class="card-kicker">Fieldwork</p>
+              <h3>Coastal ecosystem networks</h3>
+              <p>Connecting local field programs with continental-scale datasets.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel content-panel" id="publications" data-panel="publications">
+        <header class="section-heading compact">
+          <p class="eyebrow">Publications</p>
+          <h2>Selected work</h2>
+        </header>
+        <div class="publication-list">
+          <article>
+            <time datetime="2026">2026</time>
+            <div>
+              <h3>Placeholding a title for a major ecological synthesis</h3>
+              <p>Morgan, A., Parker, L. &amp; Chen, R. <em>Journal of Placeholder Science</em></p>
+            </div>
+            <a href="#" aria-label="Read publication 1">PDF ↗</a>
+          </article>
+          <article>
+            <time datetime="2025">2025</time>
+            <div>
+              <h3>Signals of resilience across connected ecosystems</h3>
+              <p>Morgan, A. &amp; Kim, S. <em>Annual Review of Environmental Systems</em></p>
+            </div>
+            <a href="#" aria-label="Read publication 2">PDF ↗</a>
+          </article>
+          <article>
+            <time datetime="2024">2024</time>
+            <div>
+              <h3>A practical framework for uncertain predictions</h3>
+              <p>Chen, R., Morgan, A. &amp; Rivera, J. <em>Methods in Computational Ecology</em></p>
+            </div>
+            <a href="#" aria-label="Read publication 3">PDF ↗</a>
+          </article>
+          <article>
+            <time datetime="2023">2023</time>
+            <div>
+              <h3>Long-term observations in a changing landscape</h3>
+              <p>Parker, L., Morgan, A. &amp; Williams, T. <em>Ecology Letters</em></p>
+            </div>
+            <a href="#" aria-label="Read publication 4">PDF ↗</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel content-panel" id="teaching" data-panel="teaching">
+        <header class="section-heading compact">
+          <p class="eyebrow">Teaching</p>
+          <h2>Learning through questions.</h2>
+        </header>
+        <div class="teaching-layout">
+          <p class="teaching-intro">
+            I teach students to approach scientific problems with curiosity,
+            rigor, and care for the systems and communities they study.
+          </p>
+          <div class="course-list">
+            <article>
+              <span>01</span>
+              <div>
+                <h3>Ecological Modeling</h3>
+                <p>Graduate seminar · Autumn</p>
+              </div>
+              <span class="course-arrow">↗</span>
+            </article>
+            <article>
+              <span>02</span>
+              <div>
+                <h3>Data Analysis for Ecologists</h3>
+                <p>Undergraduate course · Spring</p>
+              </div>
+              <span class="course-arrow">↗</span>
+            </article>
+            <article>
+              <span>03</span>
+              <div>
+                <h3>Science in a Changing World</h3>
+                <p>Interdisciplinary course · Spring</p>
+              </div>
+              <span class="course-arrow">↗</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel content-panel" id="contact" data-panel="contact">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s start<br />a conversation.</h2>
+        </div>
+        <div class="contact-details">
+          <div>
+            <p class="detail-label">Email</p>
+            <a href="mailto:alex.morgan@example.edu">alex.morgan@example.edu</a>
+          </div>
+          <div>
+            <p class="detail-label">Office</p>
+            <p>Science Hall 214<br />Northlake University</p>
+          </div>
+          <div>
+            <p class="detail-label">Elsewhere</p>
+            <p class="social-links">
+              <a href="#">Google Scholar ↗</a>
+              <a href="#">ORCID ↗</a>
+              <a href="#">LinkedIn ↗</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
